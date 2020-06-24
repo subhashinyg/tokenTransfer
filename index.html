@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Token Transfer</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <div class="common" style="font-family: 'Times New Roman', Times, serif;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" style="text-align: center; padding-top: 30px; padding-bottom: 30px;
+                    background-color: #362047; color: white;">
+                    <h1>TRANSFER TOKEN</h1>
+                </div> </div>
+                <div class="row">
+                    <div class="col-md-6" style="padding: 50px 0 170px 170px; background: #e1dee3;">
+                        <h2>Send Token</h2>
+                        <label for="amount">Amount Send : </label><br>
+                        <input type="text" id="amount" placeholder="Ex : 95" style="padding-right: 20px;"/><br><br>
+                        <label for="receiver">To Address : </label><br>
+                        <input type="text" id="receiver" placeholder="Ex : 0x93.." style="padding-right: 20px;"/><br><br>
+                        <a href="#" onclick="sendToken()" class="btn btn-primary">Send Token</a><br><br>
+                        <p id="msg"></p><br>
+                    </div>
+                    <div class="col-md-6" style="padding: 50px 0 170px 170px; background: #a7a0ad;"> <h3>Total Token in System : </h3>
+                        <a href="#" onclick="totalCoins()" class="btn btn-primary">Total Token</a><br><br>
+                        <p id="totcoin"></p><br><br>
+                        
+                    </div> </div>
+                </div> </div>
+                <script src="index.js"></script>
+            </body>
+            </html>
